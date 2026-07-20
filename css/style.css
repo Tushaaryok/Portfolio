@@ -975,3 +975,37 @@
 .back-top:hover {
   color: #ccc;
 }
+.container {
+  width: min(1200px, 92%);
+  margin-inline: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h1 {
+  font-size: clamp(2rem, 6vw, 5rem);
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+section {
+  padding: clamp(3rem, 8vw, 8rem) 0;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.card {
+  width: 100%;
+}
